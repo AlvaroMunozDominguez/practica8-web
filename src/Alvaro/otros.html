@@ -1,1 +1,178 @@
-cidjsbflakjdsbfladskjbfashfhbhadsljfhbadskjfhbasldhfbasdifj
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AngularJS - Características</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scrip.js" defer></script>
+    <link rel="icon" href="imagenes/logo.png">
+</head>
+<body>
+
+<header class="header">
+    <h1 class="header__title">AngularJS</h1>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="#introduccion" class="nav__link">Introducción</a></li>
+            <li class="nav__item"><a href="#caracteristicas" class="nav__link">Características</a></li>
+            <li class="nav__item"><a href="#ejemplo" class="nav__link">Ejemplo</a></li>
+            <li class="nav__item"><a href="#tutorial" class="nav__link">Tutorial</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="introduccion" class="section">
+    <h2 class="section__title">¿Qué es AngularJS?</h2>
+    <p class="text-justify">AngularJS es un framework MVC (Modelo Vista Controlador), desarrollado por Google para el Desarrollo Web Front End que permite crear aplicaciones SPA (Single-Page Applications) sin despeinarnos. Al usar un patrón MVVM (model view view-model) separamos la lógica de la de diseño pero mantenemos ambas partes conectadas (data binding). De manera que la capa visual no sabe lo que está pasando en la capa lógica pero manteniendo control sobre el DOM (el cuerpo de la web) y actualizar su contenido como queramos.
+    <br><br>
+        Si con jQuery ya podíamos manipular el contenido y estructura de nuestra web con Angular también podemos además comunicarnos con el servidor, recuperar datos, gestionar estas llamadas y mostrar el resultado en la vista. Todo esto y más en un entorno web.
+    <br><br>
+        Así es Angular, la piedra filosofal que integra una solución completa frente a otras opciones como jQuery, Knockout, Handlebars o PagerJs —librerías orientadas a resolver un problema concreto, pero no proporcionan una solución global para desarrollar aplicaciones— que nos permite prescindir del vetusto PHP en nuestros desarrollos usando una tecnología moderna, en constante evolución y actualización, con la que podemos habilitar servicios web y construir nuestro software mediante una conexión con servidor dinámica, databinding, organizar sus componentes en módulos y modificar el DOM sin tener que remover de forma extrema el fichero HTML y el patrón MVVM.
+    <br><br>
+        Otro detalle a tener en cuenta es que frente a otras opciones como jQuery, Knockout, Handlebars o PagerJs. Esas son librerías orientadas a resolver un problema concreto, pero no proporcionan una solución global para desarrollar aplicaciones.</p>
+    <img src="imagenes/logo2.png" alt="Logo de AngularJS" class="image-static">
+</section>
+
+<section id="caracteristicas" class="section">
+    <h2 class="section__title">Características Principales</h2>
+    <ul class="list">
+        <li class="list__item"><a href="#mvc" class="list__link">Arquitectura MVC</a></li>
+        <li class="list__item"><a href="#data-binding" class="list__link">Data Binding</a></li>
+        <li class="list__item"><a href="#directivas" class="list__link">Directivas</a></li>
+        <li class="list__item"><a href="#inyeccion" class="list__link">Inyección de Dependencias</a></li>
+    </ul>
+</section>
+
+<section id="mvc" class="section">
+    <h2 class="section__title">Arquitectura MVC</h2>
+    <p class="text-justify section-content">
+        AngularJS implementa el patrón de arquitectura MVC (Modelo-Vista-Controlador), que permite separar la lógica de negocio de la interfaz de usuario.
+        <br><br>
+        - **Modelo (Model):** Es el encargado de manejar los datos de la aplicación, ya sea obteniéndolos de una base de datos o gestionando datos en memoria.
+        <br>
+        - **Vista (View):** Se encarga de mostrar la información al usuario a través del HTML.
+        <br>
+        - **Controlador (Controller):** Es quien maneja la lógica de la aplicación y comunica el modelo con la vista.
+        <br><br>
+        Gracias a este enfoque, el desarrollo de aplicaciones es más modular, reutilizable y escalable.
+    </p>
+    <button class="toggle-btn">Ocultar</button>
+</section>
+
+<section id="data-binding" class="section">
+    <h2 class="section__title">Data Binding</h2>
+    <p class="text-justify section-content">
+        El Data Binding en AngularJS permite la sincronización automática entre el modelo y la vista, lo que facilita la manipulación de datos sin necesidad de modificar directamente el DOM.
+        <br><br>
+        Existen dos tipos de data binding:
+        <br>
+        - **One-Way Data Binding:** Los cambios en el modelo actualizan la vista, pero los cambios en la vista no afectan al modelo.
+        <br>
+        - **Two-Way Data Binding:** Tanto el modelo como la vista se actualizan automáticamente en función de los cambios de uno u otro.
+        <br><br>
+        Esto permite una mejor organización del código y menos esfuerzo en la manipulación manual del DOM, haciendo que las aplicaciones sean más reactivas.
+    </p>
+    <button class="toggle-btn">Ocultar</button>
+</section>
+
+<section id="directivas" class="section">
+    <h2 class="section__title">Directivas</h2>
+    <p class="text-justify section-content">
+        Las directivas en AngularJS permiten extender el HTML con nuevos atributos y funcionalidades, mejorando la organización del código y facilitando la reutilización de componentes.
+        <br><br>
+        Algunos ejemplos de directivas en AngularJS son:
+        <br>
+        - **ng-model:** Se usa para enlazar datos de entrada con el modelo.
+        <br>
+        - **ng-repeat:** Permite iterar sobre listas y generar elementos HTML dinámicamente.
+        <br>
+        - **ng-if / ng-show / ng-hide:** Controlan la visibilidad de los elementos en la vista.
+        <br>
+        - **ng-click:** Maneja eventos de clic en botones o enlaces.
+        <br><br>
+        Las directivas hacen que AngularJS sea muy flexible y permiten crear código más modular y reutilizable.
+    </p>
+    <button class="toggle-btn">Ocultar</button>
+</section>
+
+<section id="inyeccion" class="section">
+    <h2 class="section__title">Inyección de Dependencias</h2>
+    <p class="text-justify section-content">
+        La inyección de dependencias en AngularJS es un mecanismo que permite gestionar y suministrar automáticamente las dependencias necesarias para los diferentes componentes de una aplicación.
+        <br><br>
+        En términos simples, la inyección de dependencias permite definir los servicios o módulos que serán usados en un componente sin necesidad de crearlos manualmente en cada instancia.
+        <br>
+        - **Beneficios de la Inyección de Dependencias en AngularJS:**
+        <br>
+        - Facilita la reutilización de código.
+        <br>
+        - Mejora la modularidad de la aplicación.
+        <br>
+        - Reduce el acoplamiento entre componentes.
+        <br>
+        - Permite realizar pruebas unitarias de manera más sencilla.
+        <br><br>
+        AngularJS ofrece una serie de servicios integrados como `$http` (para peticiones HTTP), `$route` (para el manejo de rutas), y `$timeout` (para temporizadores), los cuales pueden ser inyectados en los controladores de manera sencilla.
+    </p>
+    <button class="toggle-btn">Ocultar</button>
+</section>
+
+<section id="ejemplo" class="section">
+    <h2 class="section__title">Ejemplo de Código</h2>
+
+    <pre class="code-block">
+        <code class="code text-justify">
+            &lt;!-- Definimos la aplicación AngularJS --&gt;
+            &lt;div ng-app="miApp" ng-controller="MiControlador"&gt;
+
+                &lt;!-- Mostramos el mensaje almacenado en el controlador --&gt;
+                &lt;p&gt;{{ mensaje }}&lt;/p&gt;
+
+            &lt;/div&gt;
+
+            &lt;script&gt;
+
+                // Creamos el módulo de AngularJS llamado "miApp"
+                var app = angular.module("miApp", []);
+
+                // Definimos un controlador llamado "MiControlador"
+                app.controller("MiControlador", function($scope) {
+
+                    // Definimos una variable "mensaje" en el $scope
+                    $scope.mensaje = "¡Hola desde AngularJS!";
+                });
+
+            &lt;/script&gt;
+        </code>
+    </pre>
+</section>
+
+
+<section id="tutorial" class="section">
+    <h2 class="section__title">Tutorial de AngularJS</h2>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/9b9pLgaSQuI"
+                title="Tutorial de AngularJS"
+                frameborder="0" allowfullscreen>
+        </iframe>
+    </div>
+</section>
+
+<section>
+    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="back-to-top-btn">Volver arriba</button>
+</section>
+
+<!-- Enlace para ir a index.html -->
+<section>
+    <a href="../web/index.html">
+        <button class="back-to-top-btn">Volver al índice</button>
+    </a>
+</section>
+
+<footer class="footer">
+    <p class="footer__text">© 2025 - Proyecto AngularJS</p>
+</footer>
+
+</body>
+</html>
