@@ -19,4 +19,29 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
+
+    // Modo oscuro/claro
+    const modeToggle = document.getElementById("mode-toggle");
+
+    modeToggle.addEventListener("click", function () {
+        document.body.classList.toggle("dark-mode");
+        modeToggle.textContent = document.body.classList.contains("dark-mode") ? "Modo Claro" : "Modo Oscuro";
+    });
+
+    // Animaciones al hacer scroll
+    const sections = document.querySelectorAll(".section");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            }
+        });
+    }, { threshold: 0.3 });
+
+    sections.forEach(section => {
+        section.classList.add("hidden");
+        observer.observe(section);
+    });
 });
+
