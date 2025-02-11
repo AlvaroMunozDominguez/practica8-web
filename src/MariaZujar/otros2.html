@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos sobre Ember.js</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagenes/ember-icon.ico" type="image/png">
+</head>
+<body>
+<header>
+    <img src="imagenes/header.jpg" alt="Ember.js Header" class="header-imagen">
+    <h1>Recursos sobre Ember.js</h1>
+    <nav>
+        <ul>
+            <li><a href="otros.html">Inicio</a></li>
+            <li><a href="otros2.html">Recursos</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section>
+    <article>
+        <h2>Tutoriales y Documentación</h2>
+        <ul>
+            <li><a href="https://guides.emberjs.com/" target="_blank">Guías Oficiales de Ember.js</a></li>
+            <li><a href="https://www.tutorialspoint.com/emberjs/index.htm" target="_blank">Tutoriales en TutorialsPoint</a></li>
+            <li><a href="https://www.youtube.com/results?search_query=ember+js+tutorial" target="_blank">Vídeos en YouTube</a></li>
+        </ul>
+    </article>
+
+    <article>
+        <h2>Ejemplo de Código</h2>
+        <p>
+            Aquí tienes un ejemplo básico de cómo crear un componente en Ember.js:
+        </p>
+        <pre><code>
+// app/components/my-component.js
+import Component from '@glimmer/component';
+
+export default class MyComponent extends Component {
+    // Lógica del componente
+}
+            </code></pre>
+    </article>
+
+    <!-- Botones interactivos -->
+    <article>
+        <h2>Botones Interactivos</h2>
+        <button id="mostrarTexto">Mostrar texto</button>
+        <button id="ocultarTexto">Ocultar texto</button>
+        <button id="cambiarColor">Cambiar color del botón</button>
+        <p id="textoOculto" style="display: none;">¡Este texto estaba oculto!</p>
+    </article>
+
+    <!-- Galería de imágenes -->
+    <article>
+        <h2>Galería de Imágenes</h2>
+        <div class="galeria">
+            <img src="imagenes/imagen1.jpg" alt="Imagen 1" class="imagen-galeria">
+            <img src="imagenes/imagen2.jpg" alt="Imagen 2" class="imagen-galeria">
+            <img src="imagenes/imagen3.jpg" alt="Imagen 3" class="imagen-galeria">
+        </div>
+        <div class="boton-galeria-contenedor">
+            <button id="anterior">Anterior</button>
+            <button id="siguiente">Siguiente</button>
+        </div>
+
+    </article>
+</section>
+
+<footer>
+    <p>&copy; 2023 Página sobre Ember.js</p>
+</footer>
+
+<script src="scrip.js"></script>
+</body>
+</html>
