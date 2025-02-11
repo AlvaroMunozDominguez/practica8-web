@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Índice de Proyectos</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: white;
+            padding: 20px;
+        }
+        header {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .proyecto-btn {
+            width: 80%;
+            max-width: 300px;
+            margin: 10px;
+            padding: 12px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: transform 0.2s, box-shadow 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .proyecto-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Índice de Proyectos</h1>
+</header>
+
+<div class="container">
+    <button class="proyecto-btn" onclick="redirigir('../src/Adrian/index.html')">🚀 Proyecto sobre Bootstrap.  Autor: Adrián Chao</button>
+    <button class="proyecto-btn" onclick="redirigir('../src/Alvaro/index.html')">🎨 Proyecto sobre Angular.   Autor: Álvaro Muñoz</button>
+    <button class="proyecto-btn" onclick="redirigir('../src/MariaZujar/index.html')">💡 Proyecto sobre.  Autor:María Zújar</button>
+    <button class="proyecto-btn" onclick="redirigir('../src/web/otros.html')">🚀 Proyecto sobre Herramientas de desarrollo de un navegador Web. Autor: Maria Bernabe</button>
+</div>
+
+<script>
+    function redirigir(ruta) {
+        if (confirm("Vas a ser redirigido a otro proyecto. ¿Deseas continuar?")) {
+            window.location.href = ruta;
+        }
+    }
+</script>
+
+</body>
+</html>

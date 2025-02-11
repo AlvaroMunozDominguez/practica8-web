@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Tools</title>
+    <link rel="shortcut icon" href="icono.png" type="image/ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Herramientas de Desarrollo en Navegadores</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+            <li><a href="#mas-herramientas"><i class="fas fa-tools"></i> Más herramientas</a></li>
+            <li><a href="#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section>
+    <article>
+        <h2>¿Qué son las Developer Tools?</h2>
+        <p>Las herramientas de desarrollo de un navegador permiten inspeccionar y depurar código web.</p>
+        <img src="imagenes/devtools.png" alt="Ejemplo de Developer Tools" width="300">
+    </article>
+
+    <article>
+        <h2>Ejemplo de uso en Chrome</h2>
+        <img src="imagenes/chrome-devtools.png" alt="Ejemplo de DevTools en Chrome" width="600">
+        <p>En Chrome, puedes acceder a DevTools presionando <strong>F12</strong> o <strong>Ctrl + Shift + I</strong>.</p>
+    </article>
+
+    <article>
+        <h2>Principales características</h2>
+        <ul>
+            <li>Inspección de elementos HTML y CSS.</li>
+            <li>Depuración de JavaScript.</li>
+            <li>Monitorización de red.</li>
+            <li>Emulación de dispositivos móviles.</li>
+        </ul>
+        <p>Para aprender más sobre las Developer Tools, visita el siguiente <a href="#" id="enlace-tutorial">tutorial oficial</a>.</p>
+    </article>
+
+    <article id="mas-herramientas">
+        <h2>Más herramientas</h2>
+        <p>Además de las Developer Tools, existen otras herramientas útiles como:</p>
+        <ul>
+            <li><strong>Lighthouse:</strong> Para evaluar el rendimiento web.</li>
+            <li><strong>WebPageTest:</strong> Para analizar tiempos de carga.</li>
+            <li><strong>Postman:</strong> Para probar API.</li>
+        </ul>
+        <button id="mostrar-mensaje">Haz clic para ver más</button>
+        <div id="contenido-adicional" class="oculto">
+            <p>Existen muchas otras herramientas avanzadas, como:</p>
+            <ul>
+                <li><strong>Google PageSpeed Insights:</strong> Analiza la velocidad de tu página.</li>
+                <li><strong>Responsive Design Mode:</strong> Simula diferentes dispositivos.</li>
+                <li><strong>Web Accessibility Tools:</strong> Evalúa la accesibilidad web.</li>
+            </ul>
+        </div>
+
+    </article>
+</section>
+
+<section id="contacto">
+    <h2>Contacto</h2>
+    <form action="procesar_formulario.jsp" method="post">
+        <label for="nombre"><i class="fas fa-user"></i> Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email"><i class="fas fa-envelope"></i> Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="fecha-nacimiento"><i class="fas fa-calendar-alt"></i> Fecha de Nacimiento:</label>
+        <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+
+        <label for="mensajee"><i class="fas fa-comment"></i> Mensaje:</label>
+        <textarea id="mensajee" name="mensaje" rows="4" required></textarea>
+
+        <button type="submit"><i class="fas fa-paper-plane"></i> Enviar</button>
+    </form>
+</section>
+
+<button id="modo-oscuro"><i class="fas fa-moon"></i> Modo Oscuro</button>
+
+<footer>
+    <p>&copy; 2025 - Proyecto de Developer Tools</p>
+</footer>
+
+<script src="scrip.js"></script>
+</body>
+</html>
