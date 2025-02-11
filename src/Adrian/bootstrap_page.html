@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Simple con Bootstrap</title>
+    <!-- Enlazando con Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="Images/booststrap_icon.png" type="image/ico">
+    <!-- Enlazando con el archivo CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">2º DAM</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Adrián</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Alvaro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Maria Zujar</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Sección principal con fondo blanco y separación lateral -->
+<div class="container mt-5 col-12 bg-white p-4 shadow-sm">
+    <!-- Título centrado -->
+    <h1 class="text-center">
+        <img src="Images/booststrap_icon.png" alt="Imagen" style="width: 40px; height: 40px; vertical-align: middle;"> Booststrap
+    </h1>
+    <p id="topText">Booststrap es una libreria de desarrollo web que nos sirve para enriquecer nuestra página web <br> con elementos interactivos. Aqui hay algunos ejemplos</p>
+
+    <!-- Ejemplo tarjetas -->
+    <h2>Ejemplo de Tarjetas</h2>
+    <p>Se muestra una tarjeta de Bootstrap con imagen, título, texto y un botón de enlace.</p>
+    <div class="card col-12 col-md-4 card-left" style="width: 18rem;">
+        <img src="Images/cat1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Título de la tarjeta</h5>
+            <p class="card-text">Este es un ejemplo de tarjeta en Bootstrap. Puedes colocar imágenes, texto, enlaces, y más.</p>
+            <a href="#" class="btn btn-primary">Ir al enlace</a>
+        </div>
+    </div>
+
+    <!-- Ejemplo botones con distintos colores-->
+    <h2>Ejemplo de Botones con Distintos Colores</h2>
+    <p>Un conjunto de botones de Bootstrap con diferentes estilos, como primario, secundario, éxito, peligro, advertencia, etc.</p>
+    <div class="d-flex gap-2 flex-wrap">
+        <button type="button" class="btn btn-primary">Botón Primario</button>
+        <button type="button" class="btn btn-secondary">Botón Secundario</button>
+        <button type="button" class="btn btn-success">Botón de Éxito</button>
+        <button type="button" class="btn btn-danger">Botón de Peligro</button>
+        <button type="button" class="btn btn-warning">Botón de Advertencia</button>
+        <button type="button" class="btn btn-info">Botón de Información</button>
+    </div>
+
+    <!-- Ejemplo carousel-->
+    <h2>Ejemplo de Carousel</h2>
+    <p>Un carousel con varias imágenes, que permite navegar entre ellas mediante botones de control.</p>
+    <div id="carouselExampleControls" class="carousel slide col-12" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Images/cat1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="Images/cat2.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="Images/cat3.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Ejemplo formulario con validacion-->
+    <h2>Ejemplo de Formulario con Validación</h2>
+    <p>Un formulario de ejemplo que incluye campos para el correo electrónico y la contraseña, con una validación básica de entrada.</p>
+    <form>
+        <div class="mb-3 col-12">
+            <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" required>
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Recordarme</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+
+    <!-- Ejemplo alertas-->
+    <h2>Ejemplo de Alertas</h2>
+    <p>Alertas de diferentes tipos como éxito, error y advertencia que notifican al usuario sobre diferentes situaciones.</p>
+    <div class="alert alert-success col-12" role="alert">
+        ¡Éxito! La operación se realizó correctamente.
+    </div>
+    <div class="alert alert-danger col-12" role="alert">
+        ¡Error! Hubo un problema al procesar la solicitud.
+    </div>
+    <div class="alert alert-warning col-12" role="alert">
+        ¡Advertencia! Tu sesión está por expirar.
+    </div>
+
+    <!-- Ejemplo tabla responsiva-->
+    <h2>Ejemplo de Tabla Responsiva</h2>
+    <p>Una tabla que muestra datos con un diseño responsivo, adaptándose a diferentes tamaños de pantalla.</p>
+    <div class="table-responsive col-12">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>País</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>Alice</td>
+                <td>25</td>
+                <td>España</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Bob</td>
+                <td>30</td>
+                <td>México</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Charlie</td>
+                <td>35</td>
+                <td>Argentina</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <!-- Ejemplo modal-->
+    <h2>Ejemplo de Modal</h2>
+    <p>Un modal interactivo que se abre al hacer clic en un botón, permitiendo mostrar contenido adicional de forma emergente.</p>
+    <!-- Botón que activa el modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Abrir Modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade col-12" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Título del Modal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Este es el contenido del modal. Aquí puedes poner cualquier cosa.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Guardar cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ejemplo modal fin-->
+
+    <!-- Ejemplo dropdown-->
+    <h2>Ejemplo de Dropdown</h2>
+    <p>Un dropdown que muestra una lista de elementos, estos pueden ser usados como botones.</p>
+    <div class="dropdown col-12">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown button
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" id="toggleOption">Alternar texto</a></li>
+            <li><a class="dropdown-item">Opcion interesante</a></li>
+            <li><a class="dropdown-item" href="#">Volver al inicio</a></li>
+        </ul>
+    </div>
+
+    <!-- Texto que alternará entre visible e invisible -->
+    <div id="toggleText" style="display:none; margin-top: 20px;">
+        <p>Este texto alternará entre visible e invisible dependiendo de la opción seleccionada en el dropdown.</p>
+    </div>
+
+</div>
+
+<!-- Pie de página -->
+<footer class="bg-dark text-white text-center p-3 mt-5">
+    <p>&copy; 2025 Booststrap. IES El Majuelo</p>
+</footer>
+
+<!-- Enlazando con Bootstrap JS y Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+<script src="scrip.js"></script>
+</body>
+</html>

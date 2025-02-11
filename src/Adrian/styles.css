@@ -1,0 +1,132 @@
+/* Estilo para la barra de navegación */
+.navbar {
+    margin-bottom: 30px;
+}
+
+/* Estilo para la sección principal */
+.container {
+    margin-top: 50px;
+}
+
+body{
+    background: lightblue;
+}
+
+/* Estilo para los títulos de las secciones */
+h2 {
+    color: #0056b3;
+    margin-top: 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#topText{
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color:gray;
+    text-align: center;
+}
+
+/* Estilo para los párrafos de las secciones */
+p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* Estilo para las tarjetas */
+.card {
+    margin-bottom: 30px;
+}
+
+/* Estilo para los botones */
+.btn {
+    margin-left:2%;
+}
+
+.card-left {
+    margin: 0 auto; /* Centra el contenedor */
+    width: 50%; /* Ajusta el ancho del contenedor, puedes cambiar este valor */
+}
+
+/* Si quieres que solo se aplique en dispositivos medianos o más grandes */
+@media (min-width: 768px) {
+    .card-left {
+        width: 40%; /* Ajusta el ancho en pantallas más grandes */
+    }
+}
+
+/* Estilo para el carousel */
+/* Ajustar el tamaño del div del carousel */
+#carouselExampleControls {
+    max-width: 45%; /* Reduces el tamaño al 80% del contenedor padre, ajusta según sea necesario */
+    margin: 0 auto; /* Centra el carousel en la página */
+}
+
+/* Cambiar color de los botones prev y next a gris */
+
+/* Asegúrate de que el botón tenga un color gris de fondo */
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(124, 124, 124, 0.2); /* Gris semitransparente para el fondo del botón */
+}
+
+/* Estilo para las alertas */
+.alert {
+    margin-top: 20px;
+}
+
+/* Estilo para la tabla responsiva */
+.table-responsive {
+    margin-top: 30px;
+}
+
+/* Estilo para el modal */
+.modal-dialog {
+    max-width: 500px;
+}
+
+/* Estilo para la lista de elementos */
+.list-group-item {
+    font-size: 1.2rem;
+}
+
+/* Estilo para las grillas responsivas */
+.row {
+    margin-top: 30px;
+}
+
+/* Estilo para las columnas dentro de la grilla */
+.col-12.col-md-6 {
+    margin-bottom: 20px;
+}
+
+/* Estilo para el pie de página */
+footer {
+    margin-top: 50px;
+}
+
+/* Personalización de las secciones */
+h1 {
+    color: #0056b3;
+    font-size: 4rem;
+}
+
+h3 {
+    color: #007bff;
+}
+
+/* Estilo para las etiquetas del formulario */
+.form-label {
+    font-weight: bold;
+}
+
+/* Estilo para los campos del formulario */
+.form-control {
+    margin-bottom: 15px;
+}
+
+/* Estilo para los botones del formulario */
+.btn-primary {
+    margin-top: 10px;
+}
