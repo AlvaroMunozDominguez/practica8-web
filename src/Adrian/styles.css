@@ -20,6 +20,14 @@ h2 {
     font-weight: bold;
 }
 
+#topText{
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color:gray;
+    text-align: center;
+}
+
 /* Estilo para los párrafos de las secciones */
 p {
     font-size: 1.1rem;
@@ -33,13 +41,25 @@ p {
 
 /* Estilo para los botones */
 .btn {
-    margin-right: 10px;
+    margin-left:2%;
+}
+
+.card-left {
+    margin: 0 auto; /* Centra el contenedor */
+    width: 50%; /* Ajusta el ancho del contenedor, puedes cambiar este valor */
+}
+
+/* Si quieres que solo se aplique en dispositivos medianos o más grandes */
+@media (min-width: 768px) {
+    .card-left {
+        width: 40%; /* Ajusta el ancho en pantallas más grandes */
+    }
 }
 
 /* Estilo para el carousel */
 /* Ajustar el tamaño del div del carousel */
 #carouselExampleControls {
-    max-width: 35%; /* Reduces el tamaño al 80% del contenedor padre, ajusta según sea necesario */
+    max-width: 45%; /* Reduces el tamaño al 80% del contenedor padre, ajusta según sea necesario */
     margin: 0 auto; /* Centra el carousel en la página */
 }
 
@@ -89,6 +109,7 @@ footer {
 /* Personalización de las secciones */
 h1 {
     color: #0056b3;
+    font-size: 4rem;
 }
 
 h3 {
